@@ -5,7 +5,7 @@ const app = express();
 
 const db = require("./models");
 
-app.use(express.static("public"));
+app.use(express.static("dist"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
