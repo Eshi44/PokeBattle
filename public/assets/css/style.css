@@ -3,6 +3,9 @@
 h1, h2, h3, h4 {
   font-family: 'Press Start 2P', serif;
 }
+h3 {
+  text-transform: capitalize;
+}
 
 /* classes */
 .subnav-hero-section {
@@ -28,10 +31,6 @@ background-color: #e24323;
   margin-right: auto;
 }
 
-#generate-div {
-  background-image: url(/assets/img/forest.jpg);
-  
-}
 #generate-second-page {
   width: 50px;
   height: 50px;
@@ -46,7 +45,6 @@ background-color: #e24323;
   width: 85px;
   height: 65px;
 }
-
 .pokeBall {
   width: 50px;
   height: 50px;
@@ -54,7 +52,6 @@ background-color: #e24323;
   margin-left: auto;
   margin-right: auto;
 }
-
 #return-main {
   display: block;
   margin-left: auto;
@@ -64,7 +61,3 @@ background-color: #e24323;
 #card-section {
   background-color: darkblue;
 }
-/* .grid-container {
-  background-image: image-set("/img/battle.jpg"); 
-
-} */
