@@ -10,12 +10,12 @@ $(document).ready(function() {
     const generateCardSectionsOne = $(`<h4>Player 1:</h4>
     <div class="form">
   <input id="input-userOne" type="text" name="pokeUserNameOne"> </div>
-  <img alt="pokemon ball" type="button" src="/assets/img/pokemon-ball.png" class="pokeBall" id="userOne"></img>
+  <button type="button" alt="pokemon ball" class="nes-btn is-error" id="userOne">Generate Pokemon</button>
   `);
     const generateCardSectionsTwo = $(`<h4>Player 2:</h4>
     <div class="form">
   <input id="input-userTwo" type="text" name="pokeUserNameTwo"> </div>
-  <img alt="pokemon ball" type="button" src="/assets/img/pokemon-ball.png" class="pokeBall" id="userTwo"></img>
+  <button type="button" alt="pokemon ball" class="nes-btn is-error" id="userTwo">Generate Pokemon</button>
   `);
       //append to card-sections
     $("#card-userOne").append(generateCardSectionsOne);
@@ -99,12 +99,27 @@ $(document).ready(function() {
     $("#goResultsPage").on("click",function() {
       // conditional that checks both users have generated a pokemon
       if (userOneset && userTwoset) {
+        $("button").removeAttr("Onclick");
+        $(".nes-dialog").remove();
         window.location.replace("/results");
-      } else {
-        const selectText = $("<h1>MUST SELECT A POKEMON</h1>");
-        $("#submit-block").append(selectText);
 
+      } else {
+        const sendAlert = $(`
+        <form method="dialog">
+          <p>Alert: Please generate a pokemon!</p>
+          <menu class="dialog-menu">
+            <button class="nes-btn is-primary" id="confirm">Confirm</button>
+          </menu>
+        </form>`);
+
+
+        $("#dialog-default").append(sendAlert);
       }
+
+      $("#confirm").on("click",function() {
+        console.log("next time this model will not show")
+      });
+
     });
 
   }
