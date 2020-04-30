@@ -14,7 +14,18 @@ h4 {
 h3 {
 	text-transform: capitalize;
 }
-
+button#goResultsPage.nes-btn.is-primary {
+  display: block;
+	margin-left: auto;
+  margin-right: auto;
+  background-color: #588edf;
+}
+div#fill-text-box.nes-container.is-rounded{
+  background-color: #faf9ff;
+}
+section.nes-container{
+  background-color: #faf9ff;
+}
 /* classes */
 .subnav-hero-section {
 	background-color: #e24323;
@@ -30,26 +41,27 @@ h3 {
 .indexpng {
 	width: 7%;
 }
+
 /* ids */
 
 #pokemon-image {
-	width: 30%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
-
-#generate-second-page {
-	width: 50px;
-	height: 50px;
-	display: block;
+#finalGeneratedPokemon {
+  width: 15%;
+  height: 15%;
+  display: block;
 	margin-left: auto;
 	margin-right: auto;
-	outline: none;
 }
 #generatedPokemon {
-	width: 250 px;
-	height: 250px;
+	width: 80%;
+  height: 80%;
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
 #vs {
 	margin-top: 50%;
@@ -57,19 +69,16 @@ h3 {
 	width: 90px;
 	height: 70px;
 }
-.pokeBall {
-	width: 50px;
-	height: 50px;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
+
 #return-main {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
 	width: 200px;
 }
-#card-section {
-	background-color: darkblue;
+#next-page, #return-main, #confirm  {
+  display: block;
+	margin-left: auto;
+	margin-right: auto;
 }
+

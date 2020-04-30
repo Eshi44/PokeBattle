@@ -51,11 +51,12 @@ $(document).ready(function() {
       url: pokeSearch,
       method: "GET"
     }).then(function(response) {
+      console.log(response);
       var pokeBall = {
         userName: username,
         pokemonName: response.name,
         xp: response.base_experience,
-        image: response.sprites.front_shiny,
+        image: response.sprites.front_default,
         winner: false
       };
 
