@@ -6,15 +6,18 @@ var firstPokeball;
 
 $(document).ready(function() {
 
+//   <div class="nes-field">
+//   <input type="text" id="name_field" class="nes-input">
+// </div>
   function getCardSectionsToGeneratePokemon() {
     const generateCardSectionsOne = $(`<h4>Player 1:</h4>
-    <div class="form">
-  <input id="input-userOne" type="text" name="pokeUserNameOne"> </div>
+    <div class="nes-field">
+  <input id="input-userOne" type="text"  class="nes-input" name="pokeUserNameOne"> </div>
   <button type="button" alt="pokemon ball" class="nes-btn is-error" id="userOne">Generate Pokemon</button>
   `);
     const generateCardSectionsTwo = $(`<h4>Player 2:</h4>
-    <div class="form">
-  <input id="input-userTwo" type="text" name="pokeUserNameTwo"> </div>
+    <div class="nes-field">
+  <input id="input-userTwo" type="text" class="nes-input" name="pokeUserNameTwo"> </div>
   <button type="button" alt="pokemon ball" class="nes-btn is-error" id="userTwo">Generate Pokemon</button>
   `);
       //append to card-sections
@@ -73,7 +76,7 @@ $(document).ready(function() {
       //card will empty by card id
       $("#card-" + user).empty();
       //pokemon each user got will be dynamically created and appeneded yo card
-      const userPokemon = `<h3>${pokeBall.pokemonName}</h3><img src=${pokeBall.image} ></img>`;
+      const userPokemon = `<h3>${pokeBall.pokemonName}</h3><img id="generatedPokemon"src=${pokeBall.image} ></img><progress class="nes-progress is-success" value="${pokeBall.xp}" max="300"></progress>`;
       $("#card-" + user).append(userPokemon);
 
 
@@ -103,22 +106,7 @@ $(document).ready(function() {
         $(".nes-dialog").remove();
         window.location.replace("/results");
 
-      } else {
-        const sendAlert = $(`
-        <form method="dialog">
-          <p>Alert: Please generate a pokemon!</p>
-          <menu class="dialog-menu">
-            <button class="nes-btn is-primary" id="confirm">Confirm</button>
-          </menu>
-        </form>`);
-
-
-        $("#dialog-default").append(sendAlert);
       }
-
-      $("#confirm").on("click",function() {
-        console.log("next time this model will not show")
-      });
 
     });
 

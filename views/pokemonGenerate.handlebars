@@ -9,22 +9,20 @@
   <div class="row">
     <div class="columns medium-5">
       {{!-- Card 1 User Input --}}
-      <div class="card">
-        <div class="card-section" id="card-userOne">
-
-        </div>
-      </div>
+      <section class="nes-container">
+       <section class="message-list" id="card-userOne">  
+       </section>
+      </section>
     </div>
     <div class="columns medium-2">
       <img id="vs" src="/assets/img/Vs-image.png"></img>
     </div>
     <div class="columns medium-5">
       {{!-- Card 2 User Input --}}
-      <div class="card">
-        <div class="card-section" id="card-userTwo">
-
-        </div>
-      </div>
+      <section class="nes-container">
+       <section class="message-list" id="card-userTwo">  
+       </section>
+      </section>
     </div>
   </div>
   {{!-- br will be deleted --}}
@@ -34,7 +32,12 @@
   <br>
   <section id="submit-block">
     <button type="button" id="goResultsPage" class="nes-btn is-primary" Onclick= "document.getElementById('dialog-default').showModal();">Battle Your Pokemon!</button>
-   <dialog class="nes-dialog" id="dialog-default"></dialog>
+   <dialog class="nes-dialog" id="dialog-default"><form method="dialog">
+          <p>Alert: Please generate a pokemon!</p>
+          <menu class="dialog-menu">
+            <button class="nes-btn is-primary" id="confirm">Confirm</button>
+          </menu>
+        </form></dialog>
    
 
   </section>
