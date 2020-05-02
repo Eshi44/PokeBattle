@@ -28,7 +28,8 @@
     "mysql": "^2.18.1",
     "mysql2": "^2.1.0",
     "nes.css": "^2.3.0",
-    "sequelize": "^5.21.6"
+    "sequelize": "^5.21.6",
+    "typewriter-effect": "^2.13.1"
   },
   "devDependencies": {}
 }
