@@ -6,9 +6,6 @@ var firstPokeball;
 
 $(document).ready(function() {
 
-//   <div class="nes-field">
-//   <input type="text" id="name_field" class="nes-input">
-// </div>
   function getCardSectionsToGeneratePokemon() {
     const generateCardSectionsOne = $(`<h4>Player 1:</h4>
     <div class="nes-field">
@@ -25,7 +22,6 @@ $(document).ready(function() {
     $("#card-userTwo").append(generateCardSectionsTwo);
 
   }
-
 
   function postUser(pokeBall) {
     $.ajax("/api/user", {
@@ -114,6 +110,9 @@ $(document).ready(function() {
   }
 
   saveUserNameAndGeneratePokemon();
+
+
+
 });
 
 

@@ -25,4 +25,43 @@ $(document).ready(() => {
     .typeString("<br> Enter the arena, generate your pokemon, and battle to see who wins!")
     .start();
 
+
+
+  //declare intromusic var
+  var intromusic = document.getElementById("intromusic");
+
+  function audioControls(music) {
+    var volume = 0.5;
+
+    $("#play").on("click", function() {
+      music.play();
+    });
+
+    $("#pause").on("click", function() {
+      music.pause();
+    });
+
+    $("#refresh").on("click", function() {
+      music.pause();
+      music.currentTime = 0;
+      music.play();
+    });
+
+    $("#softer").on("click", function() {
+      volume = volume - 0.1;
+      music.volume = volume;
+    });
+
+    $("#louder").on("click", function() {
+      volume = volume + 0.1;
+      music.volume = volume;
+    });
+  }
+
+  intromusic.play();
+  $("#intromusic").prop("volume", 0.5);
+  audioControls(intromusic);
+
 });
+
+

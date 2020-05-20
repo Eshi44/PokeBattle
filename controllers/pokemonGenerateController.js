@@ -39,25 +39,5 @@ router.post("/api/user", function(req, res) {
     });
 });
 
-// router.post("/api/pokemon", function(req, res) {
-//   const newPokemon = {
-//     pokemonName: req.body.pokemonName,
-//     xp: req.body.xp,
-//     image: req.body.image,
-//   };
-//   db.User.create(newPokemon)
-//     .then((newPokemon) => {
-//       console.log(newPokemon);
-//       res.json({
-//         message: "Successfully created new user",
-//         success: true,
-//       });
-//     })
-//     .catch((err) => {
-//       console.log(err);
-//     });
-// });
-
-
 
 module.exports = router;

@@ -42,8 +42,7 @@ router.get("/results", function (req, res) {
     console.log("PRINTING REQUEST");
     console.log(req.query);
     console.log(req.query.name);
-    db.User.findAndCountAll({
-   
+    db.User.findAndCountAll({ 
       where: {
         winner: true,
         userName: req.query.name

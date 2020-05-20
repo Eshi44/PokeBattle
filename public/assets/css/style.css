@@ -1,8 +1,8 @@
 /* elements */
 body {
-  background-image: url("/assets/img/daytime.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-image: url("/assets/img/daytime.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 h1,
 h2,
@@ -14,16 +14,16 @@ h3 {
 	text-transform: capitalize;
 }
 button#goResultsPage.nes-btn.is-primary {
-  display: block;
+	display: block;
 	margin-left: auto;
-  margin-right: auto;
-  background-color: #588edf;
+	margin-right: auto;
+	background-color: #588edf;
 }
-div#fill-text-box.nes-container.is-rounded{
-  background-color: #faf9ff;
+div#fill-text-box.nes-container.is-rounded {
+	background-color: #faf9ff;
 }
-section.nes-container{
-  background-color: #faf9ff;
+section.nes-container {
+	background-color: #faf9ff;
 }
 /* classes */
 .subnav-hero-section {
@@ -38,7 +38,6 @@ section.nes-container{
 .indexpng {
 	width: 7%;
 }
-
 /* ids */
 #pokemon-image {
 	display: block;
@@ -46,16 +45,16 @@ section.nes-container{
 	margin-right: auto;
 }
 #finalGeneratedPokemon {
-  width: 15%;
-  height: 15%;
-  display: block;
+	width: 15%;
+	height: 15%;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 #generatedPokemon {
 	width: 80%;
-  height: 80%;
-  display: block;
+	height: 80%;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -63,8 +62,8 @@ section.nes-container{
 	margin-top: 50%;
 	margin-left: 20%;
 	width: 120px;
-  height: 80px;
-  display: block;
+	height: 80px;
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -74,17 +73,28 @@ section.nes-container{
 	margin-right: auto;
 	width: 200px;
 }
-#next-page, #return-main, #confirm  {
-  display: block;
+#next-page {
+	margin-top: 2%;
+}
+#next-page,
+#return-main,
+#confirm {
+	display: block;
 	margin-left: auto;
 	margin-right: auto;
 }
 #alert-message {
-  font-size: 20px;
+	font-size: 20px;
 }
 #confirm {
-  background-color: #588edf;
+	background-color: #588edf;
 }
-#front-pg-padding {
-  padding-top: 2rem;
+button.audiobutton {
+	margin-bottom: 5px;
+	padding: 3px 6px ;
+	padding-bottom: 6px;
+}
+#audioBtns {
+	margin-top: 1%;
+	margin-left: 1%;
 }
