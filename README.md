@@ -1,54 +1,83 @@
-# PokéBattle: Project 2
+# PokéBattle ⚔️ 
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-![badmath](https://travis-ci.org/boennemann/badges.svg?branch=master)
-[![Dependencies](https://david-dm.org/mozilla/openbadges-backpack.svg)](https://david-dm.org/mozilla/openbadges-backpack)
-
-## Description 
-#
 Welcome all trainers! Have you ever had a dispute between friends end in disaster? From calling 'shotgun' in the parking lot to the last slice of pizza, PokéBattle is for you! 
 
-Our team built this project to bring friends together. With the help of [Pokémon API](https://pokeapi.co/), we created a modern-day pokémon equivalent to the coin toss. After consulting the rules and the pokémon chart, users can start battle. Both trainers enter their username and generate a pokémon each. The application will generate a winner and display the wins. 
+Our team built this project to bring friends together. With the help of [Pokémon API](https://pokeapi.co/), we created a modern-day Pokémon equivalent to the coin toss. After reviewing the rules, users can start battle. Both trainers enter their username and generate a Pokémon. The battle button will quickly generate a winner and display the number of wins. 
 
-We used HTML/CSS for the front end, with the Foundation framework and Handlebars templates. For the backend we implemented Node.js, Express, MySql, and Sequelize, and deployed using Heroku. 
 
-In creating this application, we learned about trials and tribulations of full-stack web development. This was our first experience using Sequelize to connect to our databases, as well honing our skills in navigating the Model View Controller paradigm.
+# Deployed Application
+
+Try it out!
+
+[PokéBattle](https://pokemonbattles-app.herokuapp.com/)
 
 ## User Story
-#
-AS a friend, I want to quickly settle a dispute with another friend
 
-I WANT to use pokemon to battle my friend's pokémon
+> As a USER, I want to quickly settle a dispute using pokemon to battle anf resolve a conflict.
 
-SO THAT we can resolve our conflict
+# Acceptance Criteria
+
+```
+GIVEN I want a pokemon to battle
+WHEN I enter the arena
+THEN I will be generated a pokemon
+
+GIVEN I want to settle an argument quickly
+WHEN I battle my generated pokemon with my opponent's pokemon
+THEN I will be given the results of who wins
+
+```
+
+# Technologies
+- Express
+- Foundation.css
+- Handlebars
+- HTML & CSS
+- JavaScript
+- jQuery
+- MySQL
+- Nes.css
+- Node.js
+- NPM:
+  - @handlebars/allow-prototype-access
+  - eslint
+  - express
+  - express-handlebars
+  - mysql
+  - nes.css
+  - sequelize
+  - typewriter-effect
+- Travis CI
+
+# Preview
+
+> <img src="images/main-screen.JPG" alt="screen one" width="50%" height="50%">
+
+> <img src="images/generate-pokemon.JPG" alt="screen one" width="50%" height="50%">
+
+> <img src="images/generated-pokemon.JPG" alt="screen one" width="50%" height="50%">
+
+> <img src="images/winner.JPG" alt="screen one" width="50%" height="50%">
 
 
-## Usage 
-#
-Please head to [PokéBattle](https://ancient-bayou-34435.herokuapp.com/) for battle.
-#
-## Screenshot
-#
-![gif](public/assets/img/pokeanimate.gif)
+# Contributors
 
-## Credits
-#
-Team Tech Sorcery:
+<a href="https://github.com/bkim377">
+         <img alt="Brandon Kim" src="images/Brandon-Kim.png"
+         width="100" height="100" style="border-radius:50%;">
+      </a>
 
-[Devin Carr](https://github.com/D3viii)
+<a href="https://github.com/Eshi44">
+         <img alt="Emerald Hamel-Iervolino" src="images/Emerald-Hamel-Iervolino.jpg"
+         width="100" height="100" style="border-radius:50%;">
+      </a>
 
-[Emerald Hamel-Iervolino](https://github.com/Eshi44)
+<a href="https://github.com/drivelikejehu">
+         <img alt="John Kang" src="images/John-Kang.jpg"
+         width="100" height="100" style="border-radius:50%;">
+      </a>
 
-[John Kang](https://github.com/drivelikejehu)
-
-[Brandon Kim](https://github.com/bkim377)
-
-[Pokémon API](https://pokeapi.co/)
-
-## License
-#
-🏆 This source code is available to everyone under the standard [MIT license](https://github.com/microsoft/vscode/blob/master/LICENSE.txt).
-
-## Project Status
-#
-We are currently slowing down development to focus on other endeavours. If you would like to contribute, please contact any member of [Team Tech Sorcery](#credits).
+<a href="https://github.com/D3viii">
+         <img alt="Devin Carr" src="images/Devin-Carr.jpg"
+         width="100" height="100" style="border-radius:50%;">
+      </a>
